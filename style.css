@@ -1,218 +1,64 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* style.css - Shakya RideX Registration Page */
 
 body {
     font-family: Arial, sans-serif;
-    background: #f0f8ff;
-    color: #222;
-    line-height: 1.5;
-    padding-top: 50px;
+    background-color: #f4f6f8;
+    margin: 0;
 }
 
 header {
-    background: #1e3a5f;
+    background-color: #198754;
     color: white;
     text-align: center;
-    padding: 15px 10px;
+    padding: 20px 10px;
 }
 
 header h1 {
-    font-size: 1.8rem;
-    margin-bottom: 5px;
+    margin: 0;
+    letter-spacing: 1px;
 }
 
-header h4 {
-    font-size: 1rem;
-    margin-bottom: 4px;
+nav.navbar {
+    background-color: #145c37;
 }
 
-header p {
-    font-size: 0.95rem;
-}
-
-.navbar {
-    background: #10253f !important;
-    padding: 8px 0;
-}
-
-.navbar-brand {
-    font-weight: bold;
-}
-
-.navbar-nav .nav-link {
+.navbar-brand,
+.nav-link {
     color: white !important;
-    margin: 0 5px;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-    color: #ffd54f !important;
-}
-
-.banner {
-    position: relative;
-    height: 30vh;
-    overflow: hidden;
 }
 
 .banner img {
     width: 100%;
-    height: 100%;
+    max-height: 300px;
     object-fit: cover;
     display: block;
 }
 
-section {
-    padding: 18px 0;
-}
-
-section h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #1e3a5f;
-}
-
-.container {
-    max-width: 1100px;
+#bookingFormSection {
+    padding: 40px 0;
 }
 
 .card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-.card-body {
-    padding: 15px;
+/* JavaScript validation */
+.error-border {
+    border: 2px solid red !important;
 }
 
-.form-label {
+#message {
+    color: red;
     font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.form-control,
-.form-select {
-    border-radius: 5px;
-    border: 1px solid #bbb;
-    box-shadow: none;
-}
-
-.form-control:focus,
-.form-select:focus {
-    border-color: #1e3a5f;
-    box-shadow: none;
-}
-
-h4 {
-    color: #1e3a5f !important;
-    margin-top: 1.2rem;
-    margin-bottom: 0.8rem;
-}
-
-.form-check {
-    margin-bottom: 8px;
-}
-
-.btn {
-    border-radius: 5px;
-    margin-right: 6px;
-    margin-top: 6px;
-}
-
-.btn-success {
-    background: #2e7d32;
-    border: none;
-}
-
-.btn-primary {
-    background: #1565c0;
-    border: none;
-}
-
-.btn-secondary {
-    background: #607d8b;
-    border: none;
-}
-
-.table thead th {
-    background: #1e3a5f;
-    color: white;
-}
-
-.table td {
-    text-align: center;
-    vertical-align: middle;
-}
-
-.car-card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-}
-
-.car-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-.offer-section {
-    background: #ddeeff;
-    padding: 15px;
-    border: 1px dashed #6c8ebf;
-    border-radius: 8px;
-    text-align: center;
-}
-
-footer {
-    background: #10253f;
-    color: white;
-    text-align: center;
-    padding: 12px 0;
     margin-top: 15px;
 }
 
-footer p {
-    margin-bottom: 4px;
-}
-
-@media (max-width: 992px) {
-    .banner {
-        height: 24vh;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    section {
-        padding: 15px 0;
-    }
-}
-
-@media (max-width: 576px) {
-    body {
-        padding-top: 46px;
-    }
-
-    .banner {
-        height: 20vh;
-    }
-
-    .card-body {
-        padding: 12px;
-    }
-
-    .btn {
-        width: 100%;
-        margin-right: 0;
-    }
+footer {
+    background-color: #145c37;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 20px;
 }
